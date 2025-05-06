@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Lorena</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 3em;
+      color: #a52a2a;
+    }
+
+    .present-box {
+      margin: 60px auto;
+      width: 200px;
+      height: 200px;
+      background: url('presente.png') no-repeat center/contain;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .present-box:hover {
+      transform: scale(1.1);
+    }
+
+    #mensagem {
+      display: none;
+      margin: 50px auto;
+      max-width: 700px;
+      padding: 20px;
+      background: #ffffffd6;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      font-size: 1.4em;
+      color: #4b0082;
+    }
+  </style>
+</head>
+<body>
+  <h1>Uma Surpresa Especial 🌸</h1>
+
+  <div class="present-box" onclick="mostrarMensagem()"></div>
+
+  <div id="mensagem">
+    <p>
+      <strong>Lorena Lopez Samutela</strong>, eu te amo profundamente. Você é a mulher mais maravilhosa que já conheci, a mãe incrível do nosso pequeno <strong>Mikhael</strong>, e o brilho que ilumina minha vida mesmo nos dias nublados. <br><br>
+      Cada momento contigo é um presente que nem mil caixas embrulhadas poderiam representar. O teu carinho, tua força, tua luz e tua coragem me inspiram a ser melhor todos os dias. <br><br>
+      Que esta mensagem simples seja um lembrete de que és profundamente amada. Não por algo que fazes, mas por tudo que és. 💖 <br><br>
+      Eu te amo, mãe do nosso anjinho Mikhael, hoje e sempre.
+    </p>
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById("mensagem").style.display = "block";
+    }
+  </script>
+</body>
+</html>
